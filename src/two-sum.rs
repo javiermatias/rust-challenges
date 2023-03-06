@@ -1,21 +1,15 @@
-fn main() {
-/*     let mut s = String::from("foo");
-    s.push_str(" world");
-
-    println!("{}",s);
-    let s1 = String::from("Hello, ");
-    let s2 = String::from("world!");
-    let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
-    println!("{}",s3); */
-    
-    let numbers = vec![2,7,11,15];
-    println!("{:?}",two_sum(numbers, 9));
-}
 /* Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 You can return the answer in any order. */
+
+fn main() {
+
+    let numbers = vec![2,7,11,15];
+    println!("{:?}",two_sum(numbers, 9));
+}
+
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 
     let mut sum=0;
@@ -46,4 +40,5 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     }
     vec![]
 }
+
 
